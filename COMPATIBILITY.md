@@ -1,0 +1,38 @@
+## chef-lmctfy Compatibility ##
+
+### Installation Compatibility ###
+
+Cookbook compatibility based on platform and installation type (`node['lmctfy']['install_type']`)
+
+#### Source ####
+
+Cookbook Compatibility
+
+LMCTFY Version | Ubuntu 12.04 | Ubuntu 12.10 | Ubuntu 13.04 | Ubuntu 13.10
+---------------|--------------|--------------|--------------|-------------
+0.1.0          | 0.1+         | 0.1+         | 0.1+         | 0.1+
+
+Test Matrix
+
+LMCTFY Version | Ubuntu 12.04 | Ubuntu 12.10 | Ubuntu 13.04 | Ubuntu 13.10
+---------------|--------------|--------------|--------------|-------------
+0.1.0          | 0.1+         | 0.1+         | 0.1+         | 0.1+
+
+### LWRP Compatibility ###
+
+LWRP compatibility based on LMCTFY features.
+
+#### Container ####
+
+LMCTFY Command | Cookbook Version
+---------------|-----------------
+create         | -
+destroy        | -
+detect         | -
+enter          | -
+init           | -
+killall        | -
+list           | -
+notify         | -
+run            | -
+stats          | -
