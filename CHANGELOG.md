@@ -1,3 +1,3 @@
 ## 0.1.0
 
-* Initial release
+* Initial lmctfy cookbook with source installation support for Ubuntu
