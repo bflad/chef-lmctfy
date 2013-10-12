@@ -4,7 +4,7 @@ maintainer_email  "bflad417@gmail.com"
 license           "Apache 2.0"
 description       "Installs/Configures Google's Let Me Contain That For You"
 long_description  IO.read(File.join(File.dirname(__FILE__), 'README.md'))
-version           "0.1.0"
+version           "0.1.1"
 recipe            "lmctfy", "Installs/Configures lmctfy"
 recipe            "lmctfy::source", "Installs lmctfy source"
 recipe            "lmctfy::source_cli", "Installs lmctfy CLI via source"
