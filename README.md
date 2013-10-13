@@ -37,8 +37,17 @@ These attributes are under the `node['lmctfy']` namespace.
 
 Attribute | Description | Type | Default
 ----------|-------------|------|--------
+init | lmctfy init specification | String | ""
 install_dir | Installation directory for LMCTFY | String | auto-detected (see attributes/default.rb)
 install_type | Installation type for LMCTFY ("source" is only available currently) | String | "source"
+
+### cgroups Attributes
+
+These attributes are under the `node['lmctfy']['cgroups']` namespace.
+
+Attribute | Description | Type | Default
+----------|-------------|------|--------
+packages | cgroups packages for installation | String | auto-detected (see attributes/default.rb)
 
 ### Source Attributes
 
