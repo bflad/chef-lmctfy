@@ -61,6 +61,8 @@ url | Repository URL for LMTCFY source | String | "https://github.com/google/lmc
 ## Recipes
 
 * `recipe[lmctfy]` Installs/Configures lmctfy
+* `recipe[lmctfy::cgroups]` Installs/Configures cgroups
+* `recipe[lmctfy::lmctfy_init]` Runs lmctfy init
 * `recipe[lmctfy::source]` Installs lmctfy via source
 * `recipe[lmctfy::source_cli]` Installs lmctfy CLI via source
 * `recipe[lmctfy::source_cpp]` Installs lmctfy C++ via source
