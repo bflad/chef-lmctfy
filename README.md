@@ -8,7 +8,14 @@ Installs/Configures [Google's Let Me Contain That For You](https://github.com/go
 
 ### Platforms
 
-* Ubuntu 12.04, 12.10, 13.04, 13.10
+* Ubuntu 12.10, 13.04, 13.10
+
+#### Upcoming Platforms
+
+* CentOS 6 (requires newer g++, CentOS devtoolset-1.1 likely in another cookbook)
+* Fedora 17+ (should work, requires testing)
+* RHEL 6 (requires newer g++, Red Hat devtoolset-1.1 likely in another cookbook)
+* Ubuntu 12.04 (requires newer g++, ubuntu-toolchain-r likely in another cookbook)
 
 ### Cookbooks
 

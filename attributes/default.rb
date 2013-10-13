@@ -1,3 +1,14 @@
+default['lmctfy']['cgroups']['packages'] = value_for_platform(
+  %w{centos fedora redhat} => {
+    "default" => %w{libcgroup}
+  },
+  %w{ubuntu} => {
+    "default" => %w{cgroup-bin libcgroup1}
+  }
+)
+
+default['lmctfy']['init'] = ""
+
 default['lmctfy']['install_type'] = "source"
 
 case node['lmctfy']['install_type']

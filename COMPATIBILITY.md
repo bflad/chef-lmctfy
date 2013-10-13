@@ -8,15 +8,15 @@ Cookbook compatibility based on platform and installation type (`node['lmctfy'][
 
 Cookbook Compatibility
 
-LMCTFY Version | Ubuntu 12.04 | Ubuntu 12.10 | Ubuntu 13.04 | Ubuntu 13.10
----------------|--------------|--------------|--------------|-------------
-0.1.0          | 0.1+         | 0.1+         | 0.1+         | 0.1+
+LMCTFY Version | CentOS 6 | Fedora 17 | RHEL 6 | Ubuntu 12.04 | Ubuntu 12.10 | Ubuntu 13.04 | Ubuntu 13.10
+---------------|----------|-----------|--------|--------------|--------------|--------------|-------------
+0.1.0          | -        | -         | -      | -            | 0.1+         | 0.1+         | 0.1+
 
 Test Matrix
 
-LMCTFY Version | Ubuntu 12.04 | Ubuntu 12.10 | Ubuntu 13.04 | Ubuntu 13.10
----------------|--------------|--------------|--------------|-------------
-0.1.0          | 0.1+         | 0.1+         | 0.1+         | 0.1+
+LMCTFY Version | CentOS 6 | Fedora 17 | RHEL 6 | Ubuntu 12.04 | Ubuntu 12.10 | Ubuntu 13.04 | Ubuntu 13.10
+---------------|----------|-----------|--------|--------------|--------------|--------------|-------------
+0.1.0          | -        | -         | -      | -            | 0.1+         | 0.1+         | 0.1+
 
 ### LWRP Compatibility ###
 
