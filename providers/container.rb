@@ -1,3 +1,4 @@
+# encoding: utf-8
 require 'chef/mixin/shell_out'
 include Chef::Mixin::ShellOut
 include Helpers::Lmctfy
@@ -15,13 +16,16 @@ end
 
 action :create do
   unless @current_resource.id
-    create_args = ''    
+    create_args = ''
     if new_resource.config
       create_args += " -c #{new_resource.config}"
     else
       create_args += " \"#{new_resource.spec}\""
     end
-    lr = shell_out("lmctfy create #{new_resource.container} #{create_args.strip}")
+    command = 'lmctfy create'
+    command += " #{new_resource.container}"
+    command += " #{create_args.strip}"
+    shell_out(command)
     new_resource.updated_by_last_action(true)
   end
 end
@@ -40,7 +44,11 @@ action :run do
   unless @current_resource.id && running?
     run_args = ''
     run_args += ' -n' if new_resource.nowait
-    lr = shell_out("lmctfy run #{run_args.strip} #{current_resource.id} \"#{new_resource.command}\"")
+    command = 'lmctfy run'
+    command += " #{run_args.strip}"
+    command += " #{current_resource.id}"
+    command += " \"#{new_resource.command}\""
+    shell_out(command)
     new_resource.updated_by_last_action(true)
   end
 end

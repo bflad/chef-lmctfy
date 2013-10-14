@@ -1,3 +1,7 @@
+## 0.2.1
+
+* FC003 fix and Rubocop testing
+
 ## 0.2.0
 
 * Initial container LWRP

@@ -1,3 +1,4 @@
+# encoding: utf-8
 lmctfy_container 'create' do
   spec ''
 end

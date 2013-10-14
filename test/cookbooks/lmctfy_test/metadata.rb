@@ -1,3 +1,4 @@
+# encoding: utf-8
 name             'lmctfy_test'
 maintainer       'Brian Flad'
 maintainer_email 'bflad417@gmail.com'

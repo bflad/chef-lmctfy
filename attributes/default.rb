@@ -1,3 +1,5 @@
+# encoding: utf-8
+
 default['lmctfy']['cgroups']['packages'] = value_for_platform(
   %w{centos fedora redhat} => {
     'default' => %w{libcgroup}

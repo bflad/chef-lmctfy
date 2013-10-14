@@ -1,3 +1,4 @@
+# encoding: utf-8
 actions :create, :destroy, :killall, :run
 
 default_action :create

@@ -1,4 +1,7 @@
+# encoding: utf-8
+# Helpers module
 module Helpers
+  # Helpers::LmctfyTest
   module LmctfyTest
     require 'chef/mixin/shell_out'
     require 'sys/proctable'
@@ -7,6 +10,5 @@ module Helpers
     include MiniTest::Chef::Assertions
     include MiniTest::Chef::Context
     include MiniTest::Chef::Resources
-
   end
 end

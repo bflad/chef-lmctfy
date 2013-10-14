@@ -1,3 +1,4 @@
+# encoding: utf-8
 # Temporarily handle init every Chef run...
 # TODO: init should be done via init/upstart/systemd
 

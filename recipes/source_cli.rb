@@ -1,3 +1,4 @@
+# encoding: utf-8
 execute 'Making lmctfy CLI via source' do
   cwd "#{Chef::Config[:file_cache_path]}/lmctfy"
   command "make -j #{node['cpu']['total']} lmctfy"

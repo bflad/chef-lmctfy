@@ -1,3 +1,4 @@
+# encoding: utf-8
 include_recipe 'build-essential'
 include_recipe 'git'
 
