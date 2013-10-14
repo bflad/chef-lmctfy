@@ -1,4 +1,4 @@
-execute "Making lmctfy CLI via source" do
+execute 'Making lmctfy CLI via source' do
   cwd "#{Chef::Config[:file_cache_path]}/lmctfy"
   command "make -j #{node['cpu']['total']} lmctfy"
   creates "#{Chef::Config[:file_cache_path]}/lmctfy/bin/lmctfy/cli/lmctfy"

@@ -15,7 +15,7 @@ end
 
 action :create do
   unless @current_resource.id
-    create_args = ""    
+    create_args = ''    
     if new_resource.config
       create_args += " -c #{new_resource.config}"
     else
@@ -38,8 +38,8 @@ end
 
 action :run do
   unless @current_resource.id && running?
-    run_args = ""
-    run_args += " -n" if new_resource.nowait
+    run_args = ''
+    run_args += ' -n' if new_resource.nowait
     lr = shell_out("lmctfy run #{run_args.strip} #{current_resource.id} \"#{new_resource.command}\"")
     new_resource.updated_by_last_action(true)
   end

@@ -1,6 +1,6 @@
 require File.expand_path('../support/helpers', __FILE__)
 
-describe_recipe "lmctfy::source" do
+describe_recipe 'lmctfy::source' do
   include Helpers::Lmctfy
 
   it 'installs lmctfy binary' do
