@@ -26,13 +26,12 @@ LWRP compatibility based on LMCTFY features.
 
 LMCTFY Command | Cookbook Version
 ---------------|-----------------
-create         | -
-destroy        | -
+create         | 0.2+
+destroy        | 0.2+
 detect         | -
 enter          | -
-init           | -
-killall        | -
+killall        | 0.2+
 list           | -
 notify         | -
-run            | -
+run            | 0.2+
 stats          | -

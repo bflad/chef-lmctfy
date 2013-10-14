@@ -41,7 +41,9 @@ Vagrant.configure("2") do |config|
     }
 
     chef.run_list = %w{
-      recipe[lmctfy]
+      recipe[minitest-handler]
+      recipe[lmctfy_test]
+      recipe[lmctfy_test::container_lwrp]
     }
   end
 end

@@ -3,29 +3,27 @@ require File.expand_path('../support/helpers', __FILE__)
 describe_recipe "lmctfy_test::container_lwrp_test" do
   include Helpers::LmctfyTest
 
-  it "has busybox sleep 1111 container running" do
-    assert container_exists?("busybox","sleep 1111")
-    assert container_running?("busybox","sleep 1111")
+  it "has create action" do
+    assert container_exists?("create")
   end
 
-  it "has busybox sleep 2222 container restarted" do
-    assert container_exists?("busybox","sleep 2222")
-    assert container_running?("busybox","sleep 2222")
+  it "has run action" do
+    assert container_exists?("run")
+    assert container_command_running?("run","sleep 9999")
+    assert container_command_count("run","sleep 9999").must_equal 1
   end
 
-  it "has busybox sleep 3333 container stopped" do
-    assert container_exists?("busybox","sleep 3333")
-    refute container_running?("busybox","sleep 3333")
+  it "has killall action" do
+    assert container_exists?("killall")
+    refute container_command_running?("killall","sleep 9999")
   end
 
-  it "has busybox sleep 4444 container stopped and started" do
-    assert container_exists?("busybox","sleep 4444")
-    assert container_running?("busybox","sleep 4444")
+  it "has destroy action" do
+    refute container_exists?("destroy")
   end
 
-  it "has busybox sleep 5555 container removed" do
-    refute container_exists?("busybox","sleep 5555")
-    refute container_running?("busybox","sleep 5555")
+  it "has destroy action after run action" do
+    refute container_exists?("destroy_after_run")
+    refute container_command_running?("destroy_after_run","sleep 9999")
   end
-
 end

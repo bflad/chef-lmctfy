@@ -1,3 +1,7 @@
+## 0.2.0
+
+* Initial container LWRP
+
 ## 0.1.2
 
 * Added cgroups recipe to workaround control_groups cookbook support for RHEL/Ubuntu 12.10+

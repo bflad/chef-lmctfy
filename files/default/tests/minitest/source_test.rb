@@ -4,7 +4,7 @@ describe_recipe "lmctfy::source" do
   include Helpers::Lmctfy
 
   it 'installs lmctfy binary' do
-    file("#{node['docker']['install_dir']}/bin/lmctfy").must_exist
+    file("#{node['lmctfy']['install_dir']}/bin/lmctfy").must_exist
   end
   
 end

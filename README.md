@@ -67,6 +67,63 @@ url | Repository URL for LMTCFY source | String | "https://github.com/google/lmc
 * `recipe[lmctfy::source_cli]` Installs lmctfy CLI via source
 * `recipe[lmctfy::source_cpp]` Installs lmctfy C++ via source
 
+## LWRPs
+
+### lmctfy_container
+
+Create a container without spec:
+
+    lmctfy_container "my_container" do
+      spec ""
+    end
+
+Create a container with spec:
+
+    lmctfy_container "my_100mb_container" do
+      spec "memory:{limit:100000000}"
+    end
+
+Create a container with spec in config:
+
+    lmctfy_container "my_config_container" do
+      config "/path/to/lmctfy-config"
+    end
+
+Create a container and run command at same time:
+
+    lmctfy_container "my_command_container" do
+      command "sleep 9999"
+      nowait true
+      spec ""
+      action [:create,:run]
+    end
+
+Run a command in a container:
+
+    lmctfy_container "my_container" do
+      command "sleep 9999"
+      nowait true
+      action :run
+    end
+
+Kill all processes in a container:
+
+    lmctfy_container "my_container" do
+      action :killall
+    end
+
+Kill all processes and destroy container at same time:
+
+    lmctfy_container "my_container" do
+      action [:killall, :destroy]
+    end
+
+Destroy a container:
+
+    lmctfy_container "my_container" do
+      action :destroy
+    end
+
 ## Usage
 
 ### Default Installation
