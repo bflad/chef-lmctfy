@@ -21,6 +21,7 @@ Installs/Configures [Google's Let Me Contain That For You](https://github.com/go
 
 [Opscode Cookbooks](https://github.com/opscode-cookbooks/)
 
+* [apt](https://github.com/opscode-cookbooks/apt)
 * [build-essential](https://github.com/opscode-cookbooks/build-essential)
 * [git](https://github.com/opscode-cookbooks/git)
 
@@ -139,8 +140,8 @@ Here's how you can quickly get testing or developing against the cookbook thanks
     vagrant plugin install vagrant-berkshelf
     vagrant plugin install vagrant-cachier
     vagrant plugin install vagrant-omnibus
-    git clone git://github.com/bflad/chef-docker.git
-    cd chef-docker
+    git clone git://github.com/bflad/chef-lmctfy.git
+    cd chef-lmctfy
     vagrant up BOX # BOX being ubuntu1204, ubuntu1210, or ubuntu1304
 
 You can then SSH into the running VM using the `vagrant ssh BOX` command.
