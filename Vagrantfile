@@ -9,6 +9,12 @@ Vagrant.configure("2") do |config|
     centos6.vm.hostname = 'lmctfy-centos-6'
   end
 
+  config.vm.define :debian7 do |debian7|
+    debian7.vm.box      = 'opscode-debian-7.1.0'
+    debian7.vm.box_url  = 'https://opscode-vm.s3.amazonaws.com/vagrant/opscode_debian-7.1.0_provisionerless.box'
+    debian7.vm.hostname = 'lmctfy-debian-7'
+  end
+
   config.vm.define :fedora18 do |fedora18|
     fedora18.vm.box      = 'opscode-fedora-18'
     fedora18.vm.box_url  = 'https://opscode-vm.s3.amazonaws.com/vagrant/opscode_fedora-18_provisionerless.box'
