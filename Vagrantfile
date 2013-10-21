@@ -9,6 +9,18 @@ Vagrant.configure("2") do |config|
     centos6.vm.hostname = 'lmctfy-centos-6'
   end
 
+  config.vm.define :fedora18 do |fedora18|
+    fedora18.vm.box      = 'opscode-fedora-18'
+    fedora18.vm.box_url  = 'https://opscode-vm.s3.amazonaws.com/vagrant/opscode_fedora-18_provisionerless.box'
+    fedora18.vm.hostname = 'lmctfy-fedora-18'
+  end
+
+  config.vm.define :fedora19 do |fedora19|
+    fedora19.vm.box      = 'opscode-fedora-19'
+    fedora19.vm.box_url  = 'https://opscode-vm.s3.amazonaws.com/vagrant/opscode_fedora-19_provisionerless.box'
+    fedora19.vm.hostname = 'lmctfy-fedora-19'
+  end
+
   config.vm.define :ubuntu1204 do |ubuntu1204|
     ubuntu1204.vm.box      = 'opscode-ubuntu-12.04'
     ubuntu1204.vm.box_url  = 'https://opscode-vm.s3.amazonaws.com/vagrant/opscode_ubuntu-12.04_provisionerless.box'
