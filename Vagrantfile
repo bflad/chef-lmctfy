@@ -45,6 +45,12 @@ Vagrant.configure("2") do |config|
     ubuntu1304.vm.hostname = 'lmctfy-ubuntu-1304'
   end
 
+  config.vm.define :ubuntu1310 do |ubuntu1310|
+    ubuntu1310.vm.box      = 'opscode-ubuntu-13.10'
+    ubuntu1310.vm.box_url  = 'https://opscode-vm.s3.amazonaws.com/vagrant/opscode_ubuntu-13.10_provisionerless.box'
+    ubuntu1310.vm.hostname = 'lmctfy-ubuntu-1310'
+  end
+
   config.vm.network :private_network, ip: '192.168.50.10'
 
   config.vm.provider "virtualbox" do |v|
