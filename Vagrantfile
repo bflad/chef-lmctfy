@@ -85,7 +85,7 @@ Vagrant.configure('2') do |config|
     chef.run_list = [
       'recipe[minitest-handler]',
       "recipe[#{cookbook}_test]",
-      "recipe[#{cookbook}_test::container_lwrp]",
+      "recipe[#{cookbook}_test::container_lwrp]"
     ]
   end
 end
