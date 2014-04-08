@@ -3,11 +3,11 @@ include_recipe 'build-essential'
 include_recipe 'git'
 
 packages = value_for_platform(
-  %w{centos fedora redhat} => {
-    'default' => %w{pkgconfig}
+  %w(centos fedora redhat) => {
+    'default' => %w(pkgconfig)
   },
-  %w{ubuntu} => {
-    'default' => %w{pkg-config}
+  %w(ubuntu) => {
+    'default' => %w(pkg-config)
   }
 )
 

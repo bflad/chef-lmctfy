@@ -1,11 +1,11 @@
 # encoding: utf-8
 
 default['lmctfy']['cgroups']['packages'] = value_for_platform(
-  %w{centos fedora redhat} => {
-    'default' => %w{libcgroup}
+  %w(centos fedora redhat) => {
+    'default' => %w(libcgroup)
   },
-  %w{ubuntu} => {
-    'default' => %w{cgroup-bin libcgroup1}
+  %w(ubuntu) => {
+    'default' => %w(cgroup-bin libcgroup1)
   }
 )
 
